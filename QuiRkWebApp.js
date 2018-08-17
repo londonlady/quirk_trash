@@ -4,7 +4,7 @@ contacts = JSON.parse(text);
 
 
 function qrcoding(){
-  var tag = "http://quirkwebapp.com/"+localStorage.id;
+  var tag = "https://londonlady.github.io/quirk/QuiRkWebApp_Contacts";
   var link = 'https://api.qrserver.com/v1/create-qr-code/?data='+tag+"&amp;size=100x100";
   document.getElementById("qrcode").innerHTML = "<img src="+link+"/>";
   document.getElementById("first_name").innerHTML = "<p> First Name: " + localStorage.fname + "</p>";

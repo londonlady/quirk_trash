@@ -1,4 +1,4 @@
-var contacts = [];
+var contacts = [ ];
 text = localStorage.getItem("QuiRkWebAppJSON");
 contacts = JSON.parse(text);
 

@@ -53,31 +53,3 @@ localStorage.image = profileImage;
 console.log (localStorage.id);
 };
 
-
-$(function () {
-    $("#fileupload").change(function () {
-        $("#chip").html("");
-        var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
-        if (regex.test($(this).val().toLowerCase())) {
-            if ($.browser.msie && parseFloat(jQuery.browser.version) <= 9.0) {
-                $("#chip").show();
-                $("#chip")[0].filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = $(this).val();
-            }
-            else {
-                if (typeof (FileReader) != "undefined") {
-                    $("#chip").show();
-                    $("#chip").append("<img />");
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                        $("#chip img").attr("src", e.target.result);
-                    }
-                    reader.readAsDataURL($(this)[0].files[0]);
-                } else {
-                    alert("This browser does not support FileReader.");
-                }
-            }
-        } else {.0
-            alert("Please upload a valid image file.");
-        }
-    });
-});

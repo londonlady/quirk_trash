@@ -12,7 +12,6 @@ function qrcoding(){
   document.getElementById("job_name").innerHTML = "<p> Job: " + localStorage.job + "</p>";
   document.getElementById("email").innerHTML = "<p> E-Mail: " + localStorage.email +"</p>";
   document.getElementById("phone_number").innerHTML = "<p> Phone Number: " + localStorage.phone + "</p>";
-  //document.getElementById("profile_pic").innerHTML = "<img src=" + localStorage.image + "/>";
 
 };
 
@@ -51,7 +50,6 @@ localStorage.lname = lst;
 localStorage.job = jobName;
 localStorage.phone = phoneNumber;
 localStorage.email = emailAddress;
-localStorage.image = profileImage;
 console.log (localStorage.id);
 console.log ("TEST 3");
 };

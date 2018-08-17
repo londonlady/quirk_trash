@@ -41,6 +41,7 @@ var phonenum = obj ["phone_number"];
 var idNumb = initials + phonenum.slice(phonenum.length-5, phonenum.length-1);
 var obj = { id_number: idNumb, first_name: firstName, last_name: lastName, job_name: jobName, phone_number: phoneNumber, email_address: emailAddress };
 console.log (obj);
+console.log (contacts);
 contacts.push (obj);
 var myJSON = JSON.stringify(contacts);
 localStorage.setItem("QuiRkWebAppJSON", myJSON);

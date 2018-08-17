@@ -1,6 +1,6 @@
 var contacts = [ { id_number: idNumb, first_name: firstName, last_name: lastName, job_name: jobName, phone_number: phoneNumber, email_address: emailAddress }];
-text = localStorage.getItem("QuiRkWebAppJSON");
-contacts = JSON.parse(text);
+//text = localStorage.getItem("QuiRkWebAppJSON");
+//contacts = JSON.parse(text);
 
 
 function qrcoding(){

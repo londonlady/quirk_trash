@@ -29,11 +29,10 @@ var lastName = document.getElementById("lname").value;
 var jobName = document.getElementById("jname").value;
 var phoneNumber = document.getElementById("pnumber").value;
 var emailAddress = document.getElementById("ename").value;
-var profileImage = document.getElementById("fileupload").value;
   
 console.log ("TEST 2");
 
-var obj = { first_name: firstName, last_name: lastName, job_name: jobName, phone_number: phoneNumber, email_address: emailAddress, profile_image: profileImage };
+var obj = { first_name: firstName, last_name: lastName, job_name: jobName, phone_number: phoneNumber, email_address: emailAddress};
 var frst = obj ["first_name"];
 var lst = obj ["last_name"];
 var fInit = frst.charAt(0);

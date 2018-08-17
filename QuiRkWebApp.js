@@ -22,6 +22,7 @@ function submitform(){
 //text = localStorage.getItem("QuiRkWebAppJSON");
 //contacts = JSON.parse(text);
 //console.log(contacts)
+console.log ("TEST 1");
 
 var firstName = document.getElementById("fname").value;
 var lastName = document.getElementById("lname").value;
@@ -29,6 +30,8 @@ var jobName = document.getElementById("jname").value;
 var phoneNumber = document.getElementById("pnumber").value;
 var emailAddress = document.getElementById("ename").value;
 var profileImage = document.getElementById("fileupload").value;
+  
+console.log ("TEST 2");
 
 var obj = { first_name: firstName, last_name: lastName, job_name: jobName, phone_number: phoneNumber, email_address: emailAddress, profile_image: profileImage };
 var frst = obj ["first_name"];
@@ -51,5 +54,6 @@ localStorage.phone = phoneNumber;
 localStorage.email = emailAddress;
 localStorage.image = profileImage;
 console.log (localStorage.id);
+console.log ("TEST 3");
 };
 

@@ -1,0 +1,113 @@
+body {
+    background-image: url("https://i1.wp.com/www.webdesigndev.com/wp-content/uploads/2013/06/Triangle.jpg?resize=550%2C250");
+
+}
+
+head{
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  color: #1995AD;
+}
+
+h2{
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 40px;
+  color: #1995AD;
+}
+
+h3{
+  font-family: 'Quicksand', cursive;
+  font-size: 30px;
+  color: #1995AD;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: #003B46;
+}
+
+
+input[type=submit], input[type=button], a {
+  text-decoration: none;
+  width: 130px;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 4px;
+  font-size: 20px;
+  background-color: #A1D6E2;
+  background-position: 20px 200px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+
+
+}
+
+input[type=file] {
+  text-decoration: none;
+  width: 300px;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #A1D6E2;
+  background-position: 20px 200px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+}
+
+input[type=text], [type=number]  {
+    width: 130px;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    border: 2px solid #BCBABE;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+
+}
+
+input[type=text]:focus, [type=number]:focus {
+    width: 50%;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.cover {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#logo{
+  background-color: #1995AD;
+}
+
+#QuiRkLogo {
+  object-fit: contain;
+  width: 400px;
+
+
+}
+
+canvas{
+       background-color:#FFFFFF;
+       font-family: 'Fascinate Inline', cursive;
+
+
+       }

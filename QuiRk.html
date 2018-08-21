@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head style="background-color: #1995AD;">
+<meta charset="utf-8">
+<div id=logo><img src= "C:\Users\Girls Who Code\Desktop\qlogo.JPG" id='QuiRkLogo' class="center"></div>
+
+<title>QuiRk App</title>
+  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Quicksand" rel="stylesheet">
+
+
+<link href="QuiRk.css" rel="stylesheet">
+</head>
+<center> <h2> Welcome to QuiRk!</h2>
+<h3> The perfect tool for networking and sharing your social platforms!</h3>
+<body>
+<p>Choose the social media account you would like to share with your friends</p>
+<p>Then input your username to get a personalized QR code!</p></center>
+
+<div align = "center" id="buttons">
+    <img src="https://cio.ucop.edu/wp-content/uploads/2018/01/Insta-Real-Featured-Photo.png" alt="Instagram" onclick="igShow()"   class="cover"/>
+    <img src="http://blog.atlanticspecial.com/wp-content/uploads/2018/01/linkedinlogo.png" alt="LinkedIn" onclick="linkShow()"   class="cover"/>
+    <img src="C:\Users\Girls Who Code\Desktop\twitter.jpg" alt="Twitter" onclick="twShow()"    class="cover"/>
+    <img src="C:\Users\Girls Who Code\Desktop\Facebook.jpg" alt="Facebook" onclick="fbShow()"   class="cover"/>
+    <img src="C:\Users\Girls Who Code\Desktop\email.jpg" alt="email" onclick="eShow()" class="cover"/>
+    <img src="C:\Users\Girls Who Code\Desktop\phone.jpg" alt="phone" onclick="pShow()" class="cover"/>
+
+</div>
+
+<div align="center" id="igform">
+  <form action="file:///C:/Users/Girls%20Who%20Code/Desktop/my_instagram_QR.html">
+        <p><label for="ig_username">Instagram User Name:</label>
+        <input type="text" name="ig_username" id="igname"></p>
+
+        <input value="Submit" type="submit" onClick="igsubmit()">
+
+    </form>
+
+</div>
+
+<div align="center" id="linkform">
+  <form action="file:///C:/Users/Girls%20Who%20Code/Desktop/my_linkedin_qr.html">
+        <p><label for="link_username">LinkedIn User Name:</label>
+        <input type="text" name="link_username" id="lname"></p>
+
+        <input value="Submit" type="submit" onClick="linksubmit()" action>
+
+    </form>
+  </div>
+
+<div align="center" id="twform">
+<form action="file:///C:/Users/Girls%20Who%20Code/Desktop/my_twitter_QR.html">
+    <form>
+        <p><label for="tw_username">Twitter User Name:</label>
+        <input type="text" name="tw_username" id="tname"></p>
+
+        <input value="Submit" type="submit" onClick="twsubmit()">
+
+    </form>
+
+</div>
+
+<div align="center" id="fbform">
+<form action="file:///C:/Users/Girls%20Who%20Code/Desktop/my_facebook_QR.html">
+    <form>
+        <p><label for="fb_username">Facebook Messenger User Name:</label>
+        <input type="text" name="fb_username" id="fname"></p>
+
+        <input value="Submit" type="submit" onClick="fbsubmit()">
+
+    </form>
+
+</div>
+
+<div align="center" id="eform">
+<form action="file:///C:/Users/Girls%20Who%20Code/Desktop/my_email_QR.html">
+    <form>
+      <p><label for="e_mail">E-mail Address:</label>
+      <input type="text" name="e_mail" id="ename"></p>
+
+      <input value="Submit" type="submit" onClick="eSubmit()">
+
+    </form>
+
+</div>
+
+<div align="center" id="pform">
+<form action="file:///C:/Users/Girls%20Who%20Code/Desktop/my_phone_QR.html">
+      <form>
+        <p><label for="phone_number">Phone Number:</label>
+        <input type="number" name="phone_number" id="pname"></p>
+
+        <input value="Submit" type="submit" onClick="pSubmit()">
+
+      </form>
+
+  </div>
+
+
+
+
+
+<script src="QuiRk.js"></script>
+</body>
+
+</html>

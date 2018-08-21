@@ -1,0 +1,55 @@
+<!doctype html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<html lang="en">
+
+<head style="background-color: #1995AD;">
+  <meta charset="utf-8">
+  <div id=logo><img src= "C:\Users\Girls Who Code\Desktop\qlogo.JPG" id='QuiRkLogo' class="center"></div>
+
+  <title>QuiRk App</title>
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Quicksand" rel="stylesheet">
+
+
+  <link href="QuiRk.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<br>
+<center><p> Below is your very own Contact QR Code!</p>
+<p> Save the image below and share with your friends by having them scan it with their smartphone's camera. </p>
+<p> They can save your number by swiping down on the notification from their phone and clicking "Add to Contacts". </p>
+
+
+<br>
+
+<canvas id="qrcode" width="250" height="300" ></canvas></center>
+
+<script>
+function pqr(){
+  var tag = localStorage.phone;
+  console.log(tag)
+  var link = 'https://api.qrserver.com/v1/create-qr-code/?data='+tag+"&amp;size=250x250";
+  var canvas = document.getElementById('qrcode');
+    var context = canvas.getContext('2d');
+    var imageObj = new Image();
+    context.font = "29px Arial";
+    context.fillText("My Phone Number", 3, 290)
+      imageObj.onload = function() {
+      context.drawImage(imageObj, 0, 0);
+    };
+    imageObj.src = link;
+};
+pqr();
+
+</script>
+
+<br>
+
+
+<p align = "right"> <a href="file:///C:/Users/Girls%20Who%20Code/Desktop/QuiRk.html"> Back Home  </a> </p>
+
+
+</body>
+</html>
